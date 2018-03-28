@@ -375,17 +375,16 @@ This section documents the system metrics that are sent by the Agent.
 | ----------- | ---------- | --------- |
 | cpu.idle_perc  |  | Percentage of time the CPU is idle when no I/O requests are in progress (입/출력 요청이 없을 때 CPU는 유휴(idle/게으른)상태가 됩니다. 이때 유휴상태가 지속되는 시간만큼의 퍼센트를 나타냅니다.) |
 | cpu.wait_perc |  | Percentage of time the CPU is idle AND there is at least one I/O request in progress</br> (CPU가 유휴상태이면서 입/출력 요청이 단 하나라도 있을 때의 지속 시간만큼의 퍼센트를 다타냅니다.)|
-| cpu.stolen_perc |  | Percentage of stolen CPU time, i.e. the time spent in other OS contexts when running in a virtualized environment (가상의 프로세서를 서비스 하는 도중 해당하는 가상OS가 대기하는데 걸린 시간의 비율을 보여줍니다.)|
-| cpu.system_perc |  | Percentage of time the CPU is used at the system level (시스템 단계에서 CPU가 이용되는 시간의 비율을 보여줍니다.)|
-| cpu.user_perc  |  | Percentage of time the CPU is used at the user level (사용자 단계에서 CPU가 이용되고 있는 시간의 비율을 보여 줍니다.)|
-| cpu.total_logical_cores  |  | Total number of logical cores available for an entire node (Includes hyper threading).  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.** (전체 노드를 위해 존재하는 하이퍼 스레딩(hyunvinci.tistory.com/73)을 포함한 모든 논리 코어들의 수를 보여줍니다.)  </br>**NOTE : 이 메트릭은 send_rollup_stats가 활성화 되어 있을 경우만 사용 가능 합니다.** |
-| cpu.percent  |  | Percentage of time the CPU is used in total (CPU가 사용되는 전체 시간의 비율을 보여줍니다.)|
-| cpu.idle_time  |  | Time the CPU is idle when no I/O requests are in progress (CPU가 유휴상태이며 입/출력 요청이 없는 상태가 지속되는 시간을 보여줍니다.)|
-| cpu.wait_time  |  | Time the CPU is idle AND there is at least one I/O request in progress (CPU가 유휴상태이지만 입/출력 요청이 하나라도 있는 상태의 지속 시간을 나타냅니다.)|
-| cpu.user_time  |  | Time the CPU is used at the user level (사용자 단계에서 CPU가 사용되는 시간을 보여줍니다.)|
-| cpu.system_time  |  | Time the CPU is used at the system level (시스템 단계에서 CPU가 사용되는 시간을 보여줍니다.)|
-| cpu.frequency_mhz |  | Maximum MHz value for the cpu frequency. **NOTE: This value is dynamic, and driven by CPU governor depending on current resource need .** (cpu의 최대 주파수를 보여줍니다. 단위는 MHz입니다.)</br>
-** Note : 이 정보는 자원이 필요한 정도에 따라 CPU를 점유한 대상에 의해 동적으로 적용됩니다. **
+| cpu.stolen_perc |  | Percentage of stolen CPU time, i.e. the time spent in other OS contexts when running in a virtualized environment</br> (가상의 프로세서를 서비스 하는 도중 해당하는 가상OS가 대기하는데 걸린 시간의 비율을 보여줍니다.)|
+| cpu.system_perc |  | Percentage of time the CPU is used at the system level </br>(시스템 단계에서 CPU가 이용되는 시간의 비율을 보여줍니다.)|
+| cpu.user_perc  |  | Percentage of time the CPU is used at the user level </br>(사용자 단계에서 CPU가 이용되고 있는 시간의 비율을 보여 줍니다.)|
+| cpu.total_logical_cores  |  | Total number of logical cores available for an entire node (Includes hyper threading).  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.** </br>(전체 노드를 위해 존재하는 하이퍼 스레딩(hyunvinci.tistory.com/73)을 포함한 모든 논리 코어들의 수를 보여줍니다.)  </br>**NOTE : 이 메트릭은 send_rollup_stats가 활성화 되어 있을 경우만 사용 가능 합니다.** |
+| cpu.percent  |  | Percentage of time the CPU is used in total </br>(CPU가 사용되는 전체 시간의 비율을 보여줍니다.)|
+| cpu.idle_time  |  | Time the CPU is idle when no I/O requests are in progress </br>(CPU가 유휴상태이며 입/출력 요청이 없는 상태가 지속되는 시간을 보여줍니다.)|
+| cpu.wait_time  |  | Time the CPU is idle AND there is at least one I/O request in progress</br> (CPU가 유휴상태이지만 입/출력 요청이 하나라도 있는 상태의 지속 시간을 나타냅니다.)|
+| cpu.user_time  |  | Time the CPU is used at the user level</br> (사용자 단계에서 CPU가 사용되는 시간을 보여줍니다.)|
+| cpu.system_time  |  | Time the CPU is used at the system level </br>(시스템 단계에서 CPU가 사용되는 시간을 보여줍니다.)|
+| cpu.frequency_mhz |  | Maximum MHz value for the cpu frequency. **NOTE: This value is dynamic, and driven by CPU governor depending on current resource need .** (cpu의 최대 주파수를 보여줍니다. 단위는 MHz입니다.)</br>** Note : 이 정보는 자원이 필요한 정도에 따라 CPU를 점유한 대상에 의해 동적으로 적용됩니다. ** |
 
 ### Load
 | Metric Name | Dimensions | Semantics |
