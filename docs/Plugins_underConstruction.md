@@ -16,7 +16,7 @@
   - [List of Detection Plugins](#list-of-detection-plugins)
 - [Agent Plugin Detail](#agent-plugin-detail)
   - [System Metrics](#system-metrics)
-    - [CPU](#cpu)
+    - [CPU](#cpu)
     - [Load](#load)
     - [Memory](#memory)
     - [Disk](#disk)
