@@ -395,8 +395,8 @@ This section documents the system metrics that are sent by the Agent.
 ### Memory
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| mem.free_mb |  | Mbytes of free memory</br> 
-| mem.swap_free_perc |  | Percentage of free swap memory that is free</br> ( 사용 가능한 메모리 공간 단위;Mbytes )
+| mem.free_mb |  | Mbytes of free memory</br> ( 사용 가능한 메모리 공간 단위;Mbytes )
+| mem.swap_free_perc |  | Percentage of free swap memory that is free</br> ( 사용 가능한 잔여 전환 메모리 공간  )
 | mem.swap_free_mb |  | Mbytes of free swap memory that is free</br> ( 사용 가능한 잔여 전환 메모리 비율(가상 메모리) )
 | mem.swap_total_mb |  | Mbytes of total physical swap memory</br> ( 사용 가능한 잔여 전환 메모리 단위;Mbytes )
 | mem.swap_used_mb |  | Mbytes of total swap memory used</br> ( 사용중인 전환 가능 가상 메모리 단위;Mbytes )
