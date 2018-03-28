@@ -370,7 +370,6 @@ This section documents all the checks that are supplied by the Agent.
 This section documents the system metrics that are sent by the Agent.
 
 ### CPU
-### CPU
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
 | cpu.idle_perc  |  | Percentage of time the CPU is idle when no I/O requests are in progress</br> (입/출력 요청이 없을 때 CPU는 유휴(idle/게으른)상태가 됩니다. 이때 유휴상태가 지속되는 시간만큼의 퍼센트를 나타냅니다.) |
