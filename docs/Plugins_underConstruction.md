@@ -388,9 +388,9 @@ This section documents the system metrics that are sent by the Agent.
 ### Load
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| load.avg_1_min  |  | The normalized (by number of logical cores) average system load over a 1 minute period
-| load.avg_5_min  |  | The normalized (by number of logical cores) average system load over a 5 minute period
-| load.avg_15_min  |  | The normalized (by number of logical cores) average system load over a 15 minute period
+| load.avg_1_min  |  | The normalized (by number of logical cores) average system load over a 1 minute period</br>(1분 내에 발생한 정규화된 평균 시스템 부하 시간)
+| load.avg_5_min  |  | The normalized (by number of logical cores) average system load over a 5 minute period</br>(5분 내에 발생한 정규화된 평균 시스템 부하 시간)
+| load.avg_15_min  |  | The normalized (by number of logical cores) average system load over a 15 minute period</br>(15분 내에 발생한 정규화된 평균 시스템 부하 시간)
 
 ### Memory
 | Metric Name | Dimensions | Semantics |
