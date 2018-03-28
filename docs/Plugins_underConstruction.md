@@ -372,8 +372,7 @@ This section documents the system metrics that are sent by the Agent.
 ### CPU
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| cpu.idle_perc  |  | Percentage of time the CPU is idle when no I/O requests are in progress |
-|                |  |(입/출력 요청이 없을 때 CPU는 유휴(idle/게으른)상태가 됩니다. 이때 유휴상태가 지속되는 시간 만큼의 퍼센트를 나타냅니다.)|
+| cpu.idle_perc  |  | Percentage of time the CPU is idle when no I/O requests are in progress (입/출력 요청이 없을 때 CPU는 유휴(idle/게으른)상태가 됩니다. 이때 유휴상태가 지속되는 시간 만큼의 퍼센트를 나타냅니다.)|
 | cpu.wait_perc |  | Percentage of time the CPU is idle AND there is at least one I/O request in progress |
 | cpu.stolen_perc |  | Percentage of stolen CPU time, i.e. the time spent in other OS contexts when running in a virtualized environment |
 | cpu.system_perc |  | Percentage of time the CPU is used at the system level |
