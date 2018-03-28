@@ -395,18 +395,18 @@ This section documents the system metrics that are sent by the Agent.
 ### Memory
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| mem.free_mb |  | Mbytes of free memory
-| mem.swap_free_perc |  | Percentage of free swap memory that is free
-| mem.swap_free_mb |  | Mbytes of free swap memory that is free
-| mem.swap_total_mb |  | Mbytes of total physical swap memory
-| mem.swap_used_mb |  | Mbytes of total swap memory used
-| mem.total_mb |  | Total Mbytes of memory
-| mem.usable_mb |  | Total Mbytes of usable memory
-| mem.usable_perc |  | Percentage of total memory that is usable
-| mem.used_buffers |  | Number of buffers in Mbytes being used by the kernel for block io
-| mem.used_cached |  | Mbytes of memory used for the page cache
-| mem.used_shared  |  | Mbytes of memory shared between separate processes and typically used for inter-process communication
-| mem.used_real_mb |  | Mbytes of memory currently in use less mem.used_buffers and mem.used_cached
+| mem.free_mb |  | Mbytes of free memory</br> 
+| mem.swap_free_perc |  | Percentage of free swap memory that is free</br> ( 사용 가능한 메모리 공간 단위;Mbytes )
+| mem.swap_free_mb |  | Mbytes of free swap memory that is free</br> ( 사용 가능한 잔여 전환 메모리 비율(가상 메모리) )
+| mem.swap_total_mb |  | Mbytes of total physical swap memory</br> ( 사용 가능한 잔여 전환 메모리 단위;Mbytes )
+| mem.swap_used_mb |  | Mbytes of total swap memory used</br> ( 사용중인 전환 가능 가상 메모리 단위;Mbytes )
+| mem.total_mb |  | Total Mbytes of memory</br> ( 전체 메모리 크기 ;Mbytes )
+| mem.usable_mb |  | Total Mbytes of usable memory</br> ( 전체 사용 가능한 메모리 크기 단위;Mbytes )
+| mem.usable_perc |  | Percentage of total memory that is usable</br> ( 전체 사용 가능한 메모리 비율 )
+| mem.used_buffers |  | Number of buffers in Mbytes being used by the kernel for block io</br> ( 블럭 입출력을 위해 커널에 의해 Mbytes 단위로 이용되는 전체 메모리의 수 )
+| mem.used_cached |  | Mbytes of memory used for the page cache</br> ( Mbytes 단위의 페이지 캐시로 인해 사용되는 메모리의 크기 )
+| mem.used_shared  |  | Mbytes of memory shared between separate processes and typically used for inter-process communication</br> ( 분할 프로세스들 사이에 나눠지는 메모리 프로세스간 통신에 자주 이용되는 Mbytes 단위의 메모리의 크기 )
+| mem.used_real_mb |  | Mbytes of memory currently in use less mem.used_buffers and mem.used_cached</br> ( 버퍼와 캐시에 최근에 사용되는 Mbytes 단위의 메모리의  )
 
 ### Disk
 | Metric Name | Dimensions | Semantics |
