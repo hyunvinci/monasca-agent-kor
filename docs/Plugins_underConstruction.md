@@ -411,16 +411,16 @@ This section documents the system metrics that are sent by the Agent.
 ### Disk
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| disk.inode_used_perc | device, mount_point | The percentage of inodes that are used on a device |
-| disk.space_used_perc | device, mount_point | The percentage of disk space that is being used on a device |
-| disk.total_space_mb |  | The total amount of disk space in Mbytes aggregated across all the disks on a particular node.  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.** |
-| disk.total_used_space_mb |  | The total amount of used disk space in Mbytes aggregated across all the disks on a particular node.  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.** |
-| io.read_kbytes_sec | device | Kbytes/sec read by an io device
-| io.read_req_sec | device   | Number of read requests/sec to an io device
-| io.read_time_sec | device   | Amount of read time in seconds to an io device
-| io.write_kbytes_sec |device | Kbytes/sec written by an io device
-| io.write_req_sec   | device | Number of write requests/sec to an io device
-| io.write_time_sec | device   | Amount of write time in seconds to an io device
+| disk.inode_used_perc | device, mount_point</br> (장비, 시작점) | The percentage of inodes that are used on a device</br> (장비에 사용되는 inode들의 비율) |
+| disk.space_used_perc | device, mount_point | The percentage of disk space that is being used on a device</br> (장비에 사용되고 있는 저장소의 비율) |
+| disk.total_space_mb |  | The total amount of disk space in Mbytes aggregated across all the disks on a particular node.  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.**</br> (특정 노드의 모든 디스크들을 거쳐 종합되는 Mbytes 단위의 디스크 공간의 총계 **NOTE : 이 메트릭은 send_rollup_stats가 활성화 되어 있을 경우만 사용 가능 합니다.**) |
+| disk.total_used_space_mb |  | The total amount of used disk space in Mbytes aggregated across all the disks on a particular node.  **NOTE: This is an optional metric that is only sent when send_rollup_stats is set to true.**</br> (특정 노드의 모든 디스크들을 거쳐 종합되는 Mbytes 단위의 사용된 디스크 공간의 총계 **NOTE : 이 메트릭은 send_rollup_stats가 활성화 되어 있을 경우만 사용 가능 합니다.**) |
+| io.read_kbytes_sec | device | Kbytes/sec read by an io device</br> (하나의 입/출력 장비에 의해 읽혀짐 단위; Kbytes/초)
+| io.read_req_sec | device   | Number of read requests/sec to an io device</br> (입/출력 장비로 초당 발생하는 요청들을 읽어들인 수(또는 양))
+| io.read_time_sec | device   | Amount of read time in seconds to an io device</br> (하나의 입/출력 장비로 초당 읽어들이는 시간의 양)
+| io.write_kbytes_sec |device | Kbytes/sec written by an io device</br> (하나의 입/출력 장치에 의해 쓰여짐 단위;Kbytes/초)
+| io.write_req_sec   | device | Number of write requests/sec to an io device</br> (입/출력 장비로 초당 발생하는 요청들을 기록한 수(또는 양))
+| io.write_time_sec | device   | Amount of write time in seconds to an io device</br> (하나의 입/출력 장비로 초당 기록하는 시간의 양)
 
 ### Network
 The network check can be configured to submit its metrics in either bytes/sec or bits/sec.  The default behavior is to submit bytes.  To submit `net.in_bits_sec` and `net.out_bits_sec` rather than `net.in_bytes_sec` and `net.out_bytes_sec`, set the config option `use_bits` to true for the instance you want to configure.
