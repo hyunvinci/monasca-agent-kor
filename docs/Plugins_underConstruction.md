@@ -453,9 +453,9 @@ The Monasca Agent itself generates a small number of metrics.
 
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| monasca.thread_count  | service=monitoring component=monasca-agent | Number of threads that the collector is consuming for this collection run |
-| monasca.emit_time_sec  | service=monitoring component=monasca-agent | Amount of time that the forwarder took to send metrics to the Monasca API. |
-| monasca.collection_time_sec  | service=monitoring component=monasca-agent | Amount of time that the collector took for this collection run |
+| monasca.thread_count  | service=monitoring component=monasca-agent | Number of threads that the collector is consuming for this collection run</br> (수집 에이전트(collector)가 수집 작업을 진행할 때 발생하는 스레드의 수) |
+| monasca.emit_time_sec  | service=monitoring component=monasca-agent  | Amount of time that the forwarder took to send metrics to the Monasca API.</br> (전송 에이전트(forwarder)가 모나스카API로 메트릭 정보를 전송할 때 소모하는 만큼의 시간의 양) |
+| monasca.collection_time_sec  | service=monitoring component=monasca-agent  | Amount of time that the collector took for this collection run</br> (수집 에이전트(collector)가 수집 작업을 진행할 때 소모하는 만큼의 시간의 양) |
 
 ### Limiting System Metrics
 It is possible to reduce the number of system metrics with certain configuration parameters.
