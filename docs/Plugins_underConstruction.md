@@ -438,15 +438,15 @@ instances:
 
 | Metric Name | Dimensions | Semantics |
 | ----------- | ---------- | --------- |
-| net.in_bytes_sec  | device | Number of network bytes received per second
-| net.out_bytes_sec  | device | Number of network bytes sent per second
-| net.in_packets_sec  | device | Number of network packets received per second
-| net.out_packets_sec  | device | Number of network packets sent per second
-| net.in_errors_sec  | device | Number of network errors on incoming network traffic per second
-| net.out_errors_sec  | device | Number of network errors on outgoing network traffic per second
-| net.in_packets_dropped_sec  | device | Number of inbound network packets dropped per second
-| net.out_packets_dropped_sec  | device | Number of outbound network packets dropped per second
-| net.int_status | device | Network interface status
+| net.in_bytes_sec  | device | Number of network bytes received per second</br> (초당 전송받은 네트워크 byte들의 수)
+| net.out_bytes_sec  | device | Number of network bytes sent per second</br> (초당 전송한 네트워크 byte들의 수)
+| net.in_packets_sec  | device | Number of network packets received per second</br> (초당 전송받은 네트워크 packet들의 수)
+| net.out_packets_sec  | device | Number of network packets sent per second</br> (초당 전송한 네트워크 packet들의 수)
+| net.in_errors_sec  | device | Number of network errors on incoming network traffic per second</br> (incoming(들어오는) 네트워크 트래픽  에서 초당 발생하는 오류 사항(수))
+| net.out_errors_sec  | device | Number of network errors on outgoing network traffic per second</br> (outgoing(내보내는) 네트워크 트래픽  에서 초당 발생하는 오류 사항(수))
+| net.in_packets_dropped_sec  | device | Number of inbound network packets dropped per second</br> (inbound(오는) 네트워크 패킷들중 도중에 유실(drop)되는 사항(수))
+| net.out_packets_dropped_sec  | device | Number of outbound network packets dropped per second</br> (outbound(내보내는) 네트워크 패킷들중 도중에 유실(drop)되는 사항(수))
+| net.int_status | device | Network interface status</br> (네트워크 인터페이스 상태)
 
 ### Monasca Agent
 The Monasca Agent itself generates a small number of metrics.
